@@ -1,0 +1,24 @@
+{
+  "name": "story-backend-utils",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build",
+    "build": "tsc -p src --outDir dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "boom": "^7.1.1"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "0.0.21",
+    "@types/aws-sdk": "^2.7.0",
+    "@types/boom": "^4.3.8",
+    "@types/typescript": "^2.0.0",
+    "typescript": "^2.6.1"
+  }
+}
