@@ -1,17 +1,21 @@
 import { CenturyTypes } from "./CenturyTypes";
-import { Id } from "./Id";
+import { Id } from "./common";
 
 export namespace StoryTypes {
-  export interface Teacher extends CenturyTypes.User {
-    meta: string;
+  export interface StoryTeacherFields {
+    _id: Id;
+    meta?: string;
   }
+  export interface Teacher extends CenturyTypes.User, StoryTeacherFields {}
 
   export interface StoryClassFields {
     _id: Id;
     price: number;
     meta: string;
-    teachers: Id[];
-    courses: Id[];
+    // teachers: Id[];
+    // courses: Id[];
   }
   export interface Class extends StoryClassFields, CenturyTypes.Class {}
+
+  export type Course = CenturyTypes.Course;
 }

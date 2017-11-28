@@ -1,4 +1,4 @@
-export { Result } from "./types/Result";
+export { Result, Id, Map } from "./types/common";
 export { serialiseLambda } from "./serialiseLambda";
 
 export { CenturyTypes } from "./types/CenturyTypes";

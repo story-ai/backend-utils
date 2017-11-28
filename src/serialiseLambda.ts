@@ -1,4 +1,4 @@
-import { Result } from "./types/Result";
+import { Result } from "./types/common";
 import { boomify, BoomError } from "boom";
 
 const cors = {

@@ -1,12 +1,15 @@
-import { Id } from "./Id";
+import { Id } from "./common";
 
 export namespace CenturyTypes {
   export interface User {
     _id: Id;
     personal: {
-      ethnicity: any;
+      ethnicity: { sdeCode: string };
       gender: string;
-      name: any;
+      name: {
+        first: string;
+        last: string;
+      };
     };
     profile: {
       avatar: string;
@@ -19,8 +22,15 @@ export namespace CenturyTypes {
     };
   }
 
-  export interface Class {
+  export interface UnjoinedClass {
     _id: Id;
+    name: string;
+    organisation: Id;
+    type: "custom" | "imported";
+  }
+  export interface Class extends UnjoinedClass {
+    teachers: Id[];
+    courses: Id[];
   }
 
   export interface Course {
