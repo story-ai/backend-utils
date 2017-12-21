@@ -15,6 +15,17 @@ export namespace CenturyTypes {
       avatar: string;
       groups: {
         roles: string[];
+        organisations: {
+          organisation: Id;
+          classSettings: {
+            class: Id;
+            roles: string[];
+          }[];
+          dependants: any[];
+          roles: string[];
+          studyGroups: Id[];
+          classes: Id[];
+        }[];
       };
       extra: any;
       grades: any[];
@@ -68,5 +79,23 @@ export namespace CenturyTypes {
     icon: Id;
     organisation: Id;
     isAssignable: boolean;
+  }
+
+  export interface StudyGroup {
+ "_id": Id;
+	"organisation": Id;
+	"name": string;
+	"course": Id;
+	"class": Id;
+	"coursePlan": Id;
+	"isEnabled": boolean,
+	"isDefault": boolean,
+	"isTest": boolean,
+	"status": string;
+	"filters": {
+		"organisations": any[],
+		"users": any[],
+		"classes": Id[]
+	}
   }
 }
