@@ -19,7 +19,7 @@ export namespace CenturyTypes {
           organisation: Id;
           classSettings: {
             class: Id;
-            roles: string[];
+            roles?: string[];
           }[];
           dependants: any[];
           roles: string[];
