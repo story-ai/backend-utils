@@ -11,6 +11,12 @@ export namespace CenturyTypes {
         last: string;
       };
     };
+    contact: {
+      emails: {
+        address: string;
+        isVerified: boolean;
+      }[];
+    };
     profile: {
       avatar: string;
       groups: {
@@ -82,20 +88,20 @@ export namespace CenturyTypes {
   }
 
   export interface StudyGroup {
- "_id": Id;
-	"organisation": Id;
-	"name": string;
-	"course": Id;
-	"class": Id;
-	"coursePlan": Id;
-	"isEnabled": boolean,
-	"isDefault": boolean,
-	"isTest": boolean,
-	"status": string;
-	"filters": {
-		"organisations": any[],
-		"users": any[],
-		"classes": Id[]
-	}
+    _id: Id;
+    organisation: Id;
+    name: string;
+    course: Id;
+    class: Id;
+    coursePlan: Id;
+    isEnabled: boolean;
+    isDefault: boolean;
+    isTest: boolean;
+    status: string;
+    filters: {
+      organisations: any[];
+      users: any[];
+      classes: Id[];
+    };
   }
 }
