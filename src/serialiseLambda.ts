@@ -1,5 +1,6 @@
 import { Result } from "./types/common";
 import { boomify, BoomError } from "boom";
+import * as AWSLambda from "aws-lambda";
 
 const cors = {
   "Access-Control-Allow-Origin": "*"
