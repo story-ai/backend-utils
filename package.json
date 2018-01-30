@@ -1,6 +1,6 @@
 {
   "name": "story-backend-utils",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -16,15 +16,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/aws-lambda": "0.0.21",
     "aws-lambda": "^0.1.2",
-    "aws-sdk": "^2.183.0",
-    "boom": "^7.1.1",
-    "@types/aws-lambda": "0.0.21"
+    "aws-sdk": "^2.188.0",
+    "boom": "^7.1.1"
   },
   "devDependencies": {
-    "@types/boom": "^4.3.8",
-    "@types/node": "^8.0.53",
+    "@types/boom": "^4.3.9",
+    "@types/node": "^8.5.9",
     "@types/typescript": "^2.0.0",
-    "typescript": "^2.6.1"
+    "typescript": "^2.6.2"
   }
 }
