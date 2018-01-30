@@ -17,5 +17,10 @@ export namespace StoryTypes {
   }
   export interface Class extends StoryClassFields, CenturyTypes.Class {}
 
+  export interface StoryCourseFields {
+    _id: Id;
+    price: number;
+  }
+
   export type Course = CenturyTypes.Course;
 }
