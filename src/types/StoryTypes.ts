@@ -6,14 +6,16 @@ export namespace StoryTypes {
     _id: Id;
     meta?: string;
   }
+
   export interface Teacher extends CenturyTypes.User, StoryTeacherFields {}
+  export interface StoryUserFields {
+    _id: Id;
+    class: string;
+  }
 
   export interface StoryClassFields {
     _id: Id;
     price: number;
-    meta: string;
-    // teachers: Id[];
-    // courses: Id[];
   }
   export interface Class extends StoryClassFields, CenturyTypes.Class {}
 
