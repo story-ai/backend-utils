@@ -7,10 +7,17 @@ export namespace StoryTypes {
     meta?: string;
   }
 
+  export interface Discount {
+  	_id: Id;
+    value: number;
+    name: string;
+  }
+
   export interface Teacher extends CenturyTypes.User, StoryTeacherFields {}
   export interface StoryUserFields {
     _id: Id;
     class: string;
+	discounts: StoryTypes.Discount[];
   }
 
   export interface StoryClassFields {
