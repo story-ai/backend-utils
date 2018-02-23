@@ -18,6 +18,7 @@ export namespace StoryTypes {
     _id: Id;
     class: string;
 	discounts: StoryTypes.Discount[];
+	referral_code: string;
   }
 
   export interface StoryClassFields {
