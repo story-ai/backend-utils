@@ -8,7 +8,7 @@ export namespace StoryTypes {
   }
 
   export interface Discount {
-  	_id: Id;
+    _id: Id;
     value: number;
     name: string;
   }
@@ -17,13 +17,15 @@ export namespace StoryTypes {
   export interface StoryUserFields {
     _id: Id;
     class: string;
-	discounts: StoryTypes.Discount[];
-	referral_code: string;
+    discounts: StoryTypes.Discount[];
+    referral_code: string;
   }
 
   export interface StoryClassFields {
     _id: Id;
+    _name?: string;
     price: number;
+    order?: number;
   }
   export interface Class extends StoryClassFields, CenturyTypes.Class {}
 
