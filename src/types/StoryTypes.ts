@@ -23,15 +23,15 @@ export namespace StoryTypes {
 
   export interface StoryClassFields {
     _id: Id;
-    _name?: string;
     price: number;
-    order?: number;
   }
   export interface Class extends StoryClassFields, CenturyTypes.Class {}
 
   export interface StoryCourseFields {
     _id: Id;
     price: number;
+    name?: string;
+    order?: number;
   }
 
   export type Course = CenturyTypes.Course;
